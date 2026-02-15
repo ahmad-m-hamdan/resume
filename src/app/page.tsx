@@ -39,7 +39,7 @@ export default function Home() {
           <p className="text-base sm:text-lg text-slate-200 mb-8 max-w-3xl leading-relaxed">
             I work across the full web stack: frontend and backend; building responsive, SEO-friendly applications that prioritize performance and accessibility.
           </p>
-          <div className="flex items-center gap-3">
+          <div className="contact-icons flex items-center gap-3">
             <a
               href="mailto:ahmadmhdhamdan@gmail.com"
               aria-label="Email: ahmadmhdhamdan@gmail.com"
@@ -80,6 +80,12 @@ export default function Home() {
               <span className="sr-only">GitHub: ahmad-m-hamdan</span>
               <span className="tooltip absolute -top-12 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-slate-800 text-white text-xs rounded px-2 py-1 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-focus:visible group-focus:opacity-100 transition-all">GitHub</span>
             </a>
+          </div>
+          <div className="contact-info-print hidden text-slate-700 mb-4">
+            <p><i className="fa-solid fa-envelope" aria-hidden="true"></i> ahmadmhdhamdan@gmail.com</p>
+            <p><i className="fa-solid fa-phone" aria-hidden="true"></i> +1 (734) 450-0576</p>
+            <p><i className="fa-brands fa-linkedin" aria-hidden="true"></i> ahmad-hamdan-73a283136</p>
+            <p><i className="fa-brands fa-github" aria-hidden="true"></i> GitHub: ahmad-m-hamdan</p>
           </div>
         </div>
       </header>

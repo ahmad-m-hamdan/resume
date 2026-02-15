@@ -64,6 +64,19 @@ a {
   .bg-gradient-to-r {
     background: white !important;
   }
+
+  /* Hide icon buttons in print */
+  .contact-icons {
+    display: none;
+  }
+
+  /* Show contact info text in print */
+  .contact-info-print {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* Animation for fade-in */

@@ -8,7 +8,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-blue-900 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(/images/header-bg.webp)',
+            backgroundImage: 'url(/resume/images/header-bg.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -17,7 +17,7 @@ export default function Home() {
           <div className="mb-10 flex flex-col sm:flex-row sm:items-start items-center gap-6">
             <div className="shrink-0">
               <Image
-                src="/images/ahmad-hamdan-profile.webp"
+                src="/resume/images/ahmad-hamdan-profile.webp"
                 alt="Ahmad Hamdan"
                 width={120}
                 height={120}

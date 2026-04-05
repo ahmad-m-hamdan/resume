@@ -9,7 +9,7 @@ A clean, fast, and mobile-responsive resume website built with **Next.js**, **Re
 ✅ **Clean Design** - Professional, developer-focused design (not artsy)  
 ✅ **Single Page** - All content on one scrollable page  
 ✅ **Accessibility** - Semantic HTML and proper contrast ratios  
-✅ **Print-Friendly** - Optimized for printing to PDF  
+✅ **Print-Friendly** - Optimized for printing to PDF
 
 ## Tech Stack
 

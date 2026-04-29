@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-linear-to-b from-slate-50 to-white">
       {/* Header */}
-      <header className="relative overflow-hidden border-b border-slate-200">
+      <header className="resume-header relative overflow-hidden border-b border-slate-200 print:bg-white print:border-slate-300">
         <div 
-          className="absolute inset-0 bg-blue-900 bg-cover bg-center"
+          className="absolute inset-0 bg-blue-900 bg-cover bg-center print:hidden"
           style={{
             backgroundImage: 'url(/resume/images/header-bg.webp)',
             backgroundSize: 'cover',
@@ -26,17 +26,17 @@ export default function Home() {
               />
             </div>
             <div className="text-center sm:text-left">
-              <h1 className="text-5xl sm:text-6xl font-bold mb-4 bg-linear-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
+              <h1 className="text-5xl sm:text-6xl font-bold mb-4 bg-linear-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent print:bg-none print:text-black print:[-webkit-text-fill-color:black]">
                 Ahmad Hamdan
               </h1>
               <div className="flex items-center gap-3 mb-6 justify-center sm:justify-start">
-                <p className="text-2xl sm:text-3xl font-semibold text-white">Senior Full Stack Web Developer</p>
+                <p className="text-2xl sm:text-3xl font-semibold text-white print:text-black">Senior Full Stack Web Developer</p>
                 <div className="h-1 w-16 bg-linear-to-r from-blue-400 to-purple-400"></div>
               </div>
-              <p className="text-sm text-slate-200 mb-4">Started in 2013 in Lebanon • Based in Michigan, USA since 2021</p>
+              <p className="text-sm text-slate-200 mb-4 print:text-black">Started in 2013 in Lebanon • Based in Michigan, USA since 2021</p>
             </div>
           </div>
-          <p className="text-base sm:text-lg text-slate-200 mb-8 max-w-3xl leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-200 mb-8 max-w-3xl leading-relaxed print:text-black">
             I work across the full web stack: frontend and backend; building responsive, SEO-friendly applications that prioritize performance and accessibility.
           </p>
           <div className="contact-icons flex items-center gap-3">
@@ -81,7 +81,7 @@ export default function Home() {
               <span className="tooltip absolute -top-12 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-slate-800 text-white text-xs rounded px-2 py-1 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-focus:visible group-focus:opacity-100 transition-all">GitHub</span>
             </a>
           </div>
-          <div className="contact-info-print hidden text-slate-700 mb-4">
+          <div className="contact-info-print hidden text-slate-700 print:text-black mb-4">
             <p><i className="fa-solid fa-envelope" aria-hidden="true"></i> ahmadmhdhamdan@gmail.com</p>
             <p><i className="fa-solid fa-phone" aria-hidden="true"></i> +1 (734) 450-0576</p>
             <p><i className="fa-brands fa-linkedin" aria-hidden="true"></i> ahmad-hamdan-73a283136</p>
@@ -118,7 +118,7 @@ export default function Home() {
           <div className="space-y-8">
             <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-12 hover:shadow-xl transition-shadow mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
-                <h3 className="text-2xl font-bold text-gray-900">Senior Web Developer</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Senior Software Engineer</h3>
                 <span className="inline-block mt-3 sm:mt-0 text-sm font-medium bg-blue-100 text-blue-700 px-4 py-2 rounded-full">
                   June 2024 - Present
                 </span>
@@ -136,6 +136,10 @@ export default function Home() {
                 <li className="flex items-center gap-3 text-gray-700">
                   <i className="fa-solid fa-angle-right text-blue-500 shrink-0" aria-hidden="true"></i>
                   <span className="text-base">Conducting thorough code reviews on GitHub, upholding clean coding standards to promote readability, maintainability, and team-wide consistency</span>
+                </li>
+                <li className="flex items-center gap-3 text-gray-700">
+                  <i className="fa-solid fa-angle-right text-blue-500 shrink-0" aria-hidden="true"></i>
+                  <span className="text-base">Utilizing agentic AI to automate repetitive tasks and enhance development efficiency</span>
                 </li>
               </ul>
             </div>
@@ -316,7 +320,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-gray-900">Skills</h2>
             <div className="flex-1 h-1 bg-linear-to-r from-blue-500 to-transparent"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 print:hidden">
             <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-12">
               <h3 className="text-xl font-bold text-blue-600 mb-6">Frontend Development</h3>
               <div className="flex flex-wrap gap-3">
@@ -370,6 +374,25 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="hidden print:block space-y-4 text-black">
+            <div>
+              <h3 className="text-base font-bold mb-1">Frontend Development</h3>
+              <p className="text-sm leading-relaxed">HTML5, CSS3, LESS/SASS, Bootstrap, jQuery, AJAX, Foundation, Tailwind CSS, JavaScript (ES6), React.js, WCAG</p>
+            </div>
+            <div>
+              <h3 className="text-base font-bold mb-1">Backend Development</h3>
+              <p className="text-sm leading-relaxed">PHP, Yii2, Fat-Free, CodeIgniter, MySQL, MariaDB, SQL</p>
+            </div>
+            <div>
+              <h3 className="text-base font-bold mb-1">Tools & Platforms</h3>
+              <p className="text-sm leading-relaxed">CI/CD, Git, GitHub, GitLab, Bitbucket, Confluence, Jira, Composer, npm, PHPUnit</p>
+            </div>
+            <div>
+              <h3 className="text-base font-bold mb-1">Professional Skills</h3>
+              <p className="text-sm leading-relaxed">REST, SOAP, Salesforce, HubSpot, WordPress, PrestaShop, Wix, Joomla, Google Analytics, Google Search Console, Google Ads, Figma, Adobe Creative Suite (Photoshop, Illustrator), Arabic (native), English (fluent)</p>
+            </div>
+          </div>
         </section>
 
         {/* Education */}
@@ -380,7 +403,6 @@ export default function Home() {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-12 mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
                 <h3 className="text-2xl font-bold text-gray-900">
                   Bachelor of Science in Computer Science
@@ -390,13 +412,12 @@ export default function Home() {
                 </span>
               </div>
               <p className="text-gray-600 text-lg">American University of Beirut, Lebanon</p>
-            </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-gray-300 mt-32 border-t border-slate-700">
+      <footer className="bg-slate-900 text-gray-300 mt-32 border-t border-slate-700 print:hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
           <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()}. All rights reserved.</p>
         </div>

@@ -46,6 +46,21 @@ a {
     background-color: white;
   }
 
+  main {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .resume-header,
+  .resume-header * {
+    color: #000;
+  }
+
+  .resume-header h1 {
+    background: none;
+    -webkit-text-fill-color: currentColor;
+  }
+
   a {
     color: inherit;
     text-decoration: underline;
@@ -57,12 +72,17 @@ a {
   }
 
   section {
-    page-break-inside: avoid;
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  main section.mb-24 {
+    margin-bottom: 1.5rem;
   }
 
   .bg-gradient-to-b,
   .bg-gradient-to-r {
-    background: white !important;
+    background: white;
   }
 
   /* Hide icon buttons in print */
@@ -121,8 +141,12 @@ a:not(.group) {
   color: #2563eb; /* blue-600 for links — good contrast */
 }
 
-header .h1, header h1, header p {
-  color: #ffffff;
+@media screen {
+  .resume-header .h1,
+  .resume-header h1,
+  .resume-header p {
+    color: #ffffff;
+  }
 }
 
 

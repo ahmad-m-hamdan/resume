@@ -127,11 +127,15 @@ export default function Home() {
               <ul className="space-y-4">
                 <li className="flex items-center gap-3 text-gray-700">
                   <i className="fa-solid fa-angle-right text-blue-500 shrink-0" aria-hidden="true"></i>
-                  <span className="text-base">Contributing to the ongoing maintenance and enhancement of the Duo website (<a href="https://duo.com" target="_blank" className="text-blue-600 hover:underline">duo.com</a>), ensuring stability and optimal performance</span>
+                  <span className="text-base">Contributing to the ongoing maintenance and enhancement of the Statamic-powered Duo website (<a href="https://duo.com" target="_blank" className="text-blue-600 hover:underline">duo.com</a>), ensuring stability and optimal performance</span>
                 </li>
                 <li className="flex items-center gap-3 text-gray-700">
                   <i className="fa-solid fa-angle-right text-blue-500 shrink-0" aria-hidden="true"></i>
                   <span className="text-base">Collaborating within the development team to revamp the site into a more modern, user-friendly platform aligned with the latest SEO best practices and WCAG accessibility standards</span>
+                </li>
+                <li className="flex items-center gap-3 text-gray-700">
+                  <i className="fa-solid fa-angle-right text-blue-500 shrink-0" aria-hidden="true"></i>
+                  <span className="text-base">Ensuring compliance and contributing to developing Duo's AI-powered Google Analytics Webex bot to streamline reporting and deliver accurate marketing data.</span>
                 </li>
                 <li className="flex items-center gap-3 text-gray-700">
                   <i className="fa-solid fa-angle-right text-blue-500 shrink-0" aria-hidden="true"></i>
@@ -363,7 +367,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-12">
               <h3 className="text-xl font-bold text-cyan-600 mb-6">Professional Skills</h3>
               <div className="flex flex-wrap gap-3">
-                {["REST", "SOAP", "Salesforce", "HubSpot", "WordPress", "PrestaShop", "Wix", "Joomla", "Google Analytics", "Google Search Console", "Google Ads", "Figma", "Adobe Creative Suite (Photoshop, Illustrator)", "Arabic (native)", "English (fluent)"].map((skill) => (
+                {["REST", "SOAP", "Salesforce", "HubSpot", "WordPress", "PrestaShop", "Statamic", "Wix", "Joomla", "Google Analytics", "Google Search Console", "Google Ads", "Figma", "Photoshop", "Illustrator", "Arabic (native)", "English (fluent)"].map((skill) => (
                   <span
                     key={skill}
                     className="px-4 py-2 bg-linear-to-r from-cyan-50 to-cyan-100 text-cyan-700 text-sm font-semibold rounded-lg border border-cyan-200 hover:shadow-md transition-shadow"
@@ -382,7 +386,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-base font-bold mb-1">Backend Development</h3>
-              <p className="text-sm leading-relaxed">PHP, Yii2, Fat-Free, CodeIgniter, MySQL, MariaDB, SQL</p>
+              <p className="text-sm leading-relaxed">PHP, Yii2, Fat-Free, CodeIgniter, Laravel, MySQL, MariaDB, SQL</p>
             </div>
             <div>
               <h3 className="text-base font-bold mb-1">Tools & Platforms</h3>
